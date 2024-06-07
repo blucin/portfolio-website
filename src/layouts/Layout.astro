@@ -1,5 +1,6 @@
 ---
 import NavBar from "../components/Nav.svelte";
+import { ModeWatcher } from "mode-watcher";
 ---
 
 <!doctype html>
@@ -14,8 +15,9 @@ import NavBar from "../components/Nav.svelte";
 	</head>
   <body class="antialiased max-w-2xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
     <main class="flex-auto min-w-0 flex flex-col px-2 md:px-0">
-      <NavBar />
+      <ModeWatcher client:load />
+      <NavBar client:load/>
       <slot />
     </main>
-	</body>
+  </body>
 </html>
