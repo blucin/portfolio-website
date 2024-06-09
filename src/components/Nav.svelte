@@ -1,4 +1,5 @@
 <script>
+  import ModeToggler from "./ModeToggler.svelte";
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About", path: "/" },
@@ -16,5 +17,8 @@
         <a href={item.path}>{item.name}</a>
       </li>
     {/each}
+    <div class="ml-auto">
+      <ModeToggler />
+    </div>
   </ul>
 </nav>
