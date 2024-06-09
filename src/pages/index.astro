@@ -1,15 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Button } from '$lib/components/ui/button';
+import { Badge } from "$lib/components/ui/badge";
 import "$lib/styles/app.css";
 ---
 
 <Layout title="Portfolio">
-  <h3 class="scroll-m-20 text-2xl font-semibold tracking-tight">Hi, I am Akshar! 👋</h3>
+  <h3 class="scroll-m-20 mt-6 text-2xl font-semibold tracking-tighter">Hi, I am Akshar! 👋</h3>
   <p class="mt-2">I am a dedicated software developer specializing in various modern technologies and frameworks.</p>
   <ul class="my-1 ml-6 list-disc [&>li]:mt-2">
-    <li>My expertise lies in web development using Next.js, SvelteKit, and Astro, all powered by TypeScript.</li>
-    <li>In addition, I possess substantial experience in system and backend programming with Go, making me adept at creating robust and efficient server-side applications.</li>
-    <li>My DevOps skills encompass tools like Docker, Docker Compose, and CI/CD, ensuring smooth deployment and maintenance workflows. Furthermore, I have a strong foundation in database management, both relational (SQL) and NoSQL (MongoDB), allowing me to design and implement efficient data storage solutions.</li>
+    <li>My expertise lies in web development using <Badge>Next.js</Badge>, <Badge>SvelteKit</Badge>, and <Badge>Astro</Badge>, all powered by <Badge>TypeScript</Badge>.</li> <li>In addition, I possess substantial experience in system and backend programming with <Badge>Go</Badge>, making me adept at creating robust and efficient server-side applications.</li>
+<li>My DevOps skills encompass tools like <Badge>Docker</Badge>, <Badge>Docker Compose</Badge>, and CI/CD, ensuring smooth deployment and maintenance workflows. Furthermore, I have a strong foundation in database management, both relational (SQL) and NoSQL (MongoDB), allowing me to design and implement efficient data storage solutions.</li>
   </ul>
 </Layout>
