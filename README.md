@@ -1,3 +1,7 @@
+# My Portfolio Site
+
+A portfolio website developed using Astro. This project is part of the internship program of **CodSoft**
+
 # Astro Starter Kit: Basics
 
 ```sh
